@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    tools:context=".RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/topbar_background"
+                android:id="@+id/imageTopBackgroundRegister"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="right|center"
+                app:layout_constraintWidth_percent="0.85"
+                app:layout_constraintHeight_percent="0.4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Daftar"
+                    android:textColor="@color/white"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="untuk mengakses fitur Dante Care"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <!-- Field untuk NIM -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="Username"
+                        android:paddingLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DC2626" />
+
+                </LinearLayout>
+
+                <!-- Field untuk Nama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextNamaLengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="Nama Lengkap"
+                        android:paddingLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DC2626" />
+
+                </LinearLayout>
+
+                <!-- Field untuk E-mail -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextNoTelepon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="No Telepon"
+                        android:inputType="number"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/textViewEmailHandle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DC2626" />
+
+                </LinearLayout>
+
+                <!-- Field untuk Kata Sandi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editTextKataSandi"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edit_text_custom_selector"
+                            android:hint="Kata Sandi"
+                            android:inputType="textPassword"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp" />
+
+                        <ImageView
+                            android:id="@+id/imageViewShowPassword1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/editTextKataSandi"
+                            android:layout_alignRight="@+id/editTextKataSandi"
+                            android:layout_alignBottom="@+id/editTextKataSandi"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_baseline_visibility_off_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textViewKataSandiHandle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DC2626" />
+
+                </LinearLayout>
+
+                <!-- Field untuk Kata Sandi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editTextKonfirmasiKataSandi"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edit_text_custom_selector"
+                            android:hint="Konfirmasi Kata Sandi"
+                            android:inputType="textPassword"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp" />
+
+                        <ImageView
+                            android:id="@+id/imageViewShowPassword2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/editTextKonfirmasiKataSandi"
+                            android:layout_alignRight="@+id/editTextKonfirmasiKataSandi"
+                            android:layout_alignBottom="@+id/editTextKonfirmasiKataSandi"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_baseline_visibility_off_24" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textViewKonfirmasiKataSandiHandle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DC2626" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonDaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_custom_selector"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Daftar"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

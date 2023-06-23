@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    tools:context=".RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/topbar_background"
+                android:id="@+id/imageTopBackgroundRegister"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintWidth_percent="0.85"
+                app:layout_constraintHeight_percent="0.4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="50dp" />
+
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- Field untuk Username -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewNIMHandle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Username *Disable"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/editTextUsernameProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="Username"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:editable="false"
+                        android:paddingLeft="20dp" />
+
+
+
+                </LinearLayout>
+
+                <!-- Field untuk Nama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:text="Nama Lengkap"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/editTextNamaLengkapProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="Nama Lengkap"
+                        android:paddingLeft="20dp" />
+
+
+
+                </LinearLayout>
+
+                <!-- Field untuk E-mail -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="No Telepon"
+                        android:fontFamily="@font/poppins_regular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/editTextNoTeleponProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_custom_selector"
+                        android:hint="No Telepon"
+                        android:inputType="number"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp" />
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_custom_selector"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Edit"
+                    app:backgroundTint="@null"/>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
