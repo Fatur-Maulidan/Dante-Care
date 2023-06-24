@@ -128,7 +128,7 @@ public class ReservationActivity extends AppCompatActivity {
                     Toast.makeText(ReservationActivity.this, "Tolong isi semua data", Toast.LENGTH_SHORT).show();
                     return;
                 } else {
-                    dbHandler.addNewDataTblData(varDenteNama,varDenteLokasi,varDenteNomor, varDenteTanggal, varDenteDokter, varDenteKeluhan);
+                    dbHandler.addNewDataTblData(varDenteNama,varDenteLokasi,varDenteNomor, varDenteTanggal, varDenteDokter, varDenteKeluhan, String.valueOf(dbHandler.countDataLokasiDokter(varDenteLokasi, varDenteDokter, varDenteTanggal) + 1));
 
                     Toast.makeText(ReservationActivity.this, "Nomor Antrian anda " + dbHandler.countDataLokasiDokter(varDenteLokasi, varDenteDokter, varDenteTanggal), Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(ReservationActivity.this,MainActivity.class);

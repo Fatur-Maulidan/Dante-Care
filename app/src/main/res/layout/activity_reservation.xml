@@ -110,11 +110,12 @@
                 <EditText
                     android:id="@+id/etKeluhan"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_marginTop="40dp"
+                    android:gravity="top"
                     android:background="@drawable/edit_text_custom_selector"
                     android:hint="Keluhan"
-                    android:inputType="text"
+                    android:inputType="textMultiLine"
                     android:padding="10dp" />
 
                 <DatePicker

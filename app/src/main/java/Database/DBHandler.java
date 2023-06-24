@@ -26,7 +26,8 @@ public class DBHandler extends SQLiteOpenHelper {
                 + "nomor" + " TEXT,"
                 + "tanggal" + " TEXT,"
                 + "dokter" + " TEXT,"
-                + "keluhan" + " TEXT)";
+                + "keluhan" + " TEXT,"
+                + "antrian" + " TEXT)";
 
         String queryTbl2 = "CREATE TABLE " + TABLE_NAME_TblUser + " ("
                 + "id" + " INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -39,7 +40,7 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL(queryTbl2);
     }
 
-    public void addNewDataTblData(String nama, String lokasi, String nomor, String tanggal, String dokter, String keluhan) {
+    public void addNewDataTblData(String nama, String lokasi, String nomor, String tanggal, String dokter, String keluhan, String antrian) {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -51,6 +52,7 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put("tanggal", tanggal);
         values.put("dokter", dokter);
         values.put("keluhan", keluhan);
+        values.put("antrian", antrian);
 
         db.insert(TABLE_NAME_TblData, null, values);
 
@@ -70,6 +72,13 @@ public class DBHandler extends SQLiteOpenHelper {
         cursor.close();
 
         return count;
+    }
+
+    //  Get Data
+    public Cursor getDataReservasi(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+ TABLE_NAME_TblData,null);
+        return cursor;
     }
 
     public String[] getData(String username){

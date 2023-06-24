@@ -7,6 +7,11 @@
         android:icon="@drawable/home_circle_icon"
         />
     <item
+        android:title="List Reservasi"
+        android:id="@+id/reservasiBotNavbar"
+        android:icon="@drawable/list_icon"
+        />
+    <item
         android:title="Profile"
         android:id="@+id/bantuanBotNavBar"
         android:icon="@drawable/personal_card"

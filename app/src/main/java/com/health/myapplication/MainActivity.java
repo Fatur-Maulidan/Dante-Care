@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.homeBotNavBar:
                         selectedFragment = new HomeFragment();
                         break;
+                    case R.id.reservasiBotNavbar:
+                        selectedFragment = new ListFragment();
+                        break;
                     case R.id.bantuanBotNavBar:
                         selectedFragment = new HelpFragment();
                         break;

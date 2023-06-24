@@ -132,7 +132,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginRight="15dp">
 
                     <ImageView
                         android:id="@+id/btnReservasi"
@@ -154,19 +155,43 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/box_dummy" />
+                        android:src="@drawable/promo_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_extra_light"
-                        android:text="Dummy Icon"
+                        android:text="Promo"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/clinic_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_extra_light"
+                        android:text="Klinik"
+                        android:layout_gravity="center"
                         android:textColor="@color/black"
                         android:textSize="10dp" />
                 </LinearLayout>
@@ -181,34 +206,13 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/box_dummy" />
+                        android:src="@drawable/article_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_extra_light"
-                        android:text="Dummy Icon"
-                        android:textColor="@color/black"
-                        android:textSize="10dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/box_dummy" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extra_light"
-                        android:text="Dummy icon"
+                        android:text="Artikel"
                         android:textColor="@color/black"
                         android:textSize="10dp" />
                 </LinearLayout>
@@ -262,7 +266,7 @@
                     android:fontFamily="@font/poppins_extra_light"
                     android:maxLines="2"
                     android:ellipsize="end"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+                    android:text="Aku suka banget sama pelayanannya, apalagi Dr-nya yang memang bagus banget dalam edukasi ke aku."/>
 
             </LinearLayout>
         </LinearLayout>
